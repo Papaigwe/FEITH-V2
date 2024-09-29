@@ -94,11 +94,11 @@ const { isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sl
 
 /*
 
-	* Create By Naze
+	* Create By Igwe
 
-	* Follow https://github.com/nazedev
+	* Follow https://github.com/papaigwe
 
-	* Whatsapp : wa.me/6282113821188
+	* Whatsapp : wa.me/24160338758
 
 */
 
@@ -128,7 +128,7 @@ async function startXeonBot() {
 
 		return {
 
-			conversation: 'Halo Saya Naze Bot'
+			conversation: 'Halo igwe feith Bot'
 
 		}
 
@@ -192,7 +192,7 @@ async function startXeonBot() {
 
 		async function getPhoneNumber() {
 
-			phoneNumber = await question('Please type your WhatsApp number : ');
+			phoneNumber = await question('Please type your WhatsApp number 🦄: ');
 
 			phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
@@ -200,7 +200,7 @@ async function startXeonBot() {
 
 			if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v)) && !phoneNumber.length < 6) {
 
-				console.log(chalk.bgBlack(chalk.redBright('Start with your Country WhatsApp code') + chalk.whiteBright(',') + chalk.greenBright(' Example : 62xxx')));
+				console.log(chalk.bgBlack(chalk.redBright('Start with your Country WhatsApp code') + chalk.whiteBright(',') + chalk.greenBright(' Example : 241xxx')));
 
 				await getPhoneNumber()
 
@@ -396,11 +396,11 @@ const app = express()
 const port = process.env.PORT || 4000;
 
 app.get('/', (req, res) => {
-  res.send('Hello Globe!')
+  res.send('Hello Les guys !')
 })
 
 app.listen(port, () => {
-  console.log(`GLOBAL-MD is listening on port ${port}`)
+  console.log(`FEITH-V2 is listening on port ${port}`)
 })
 
 startXeonBot()
